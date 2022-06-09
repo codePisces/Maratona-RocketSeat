@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+  background-image: url(https://img.freepik.com/fotos-gratis/um-pedaco-de-um-antigo-mapa-marinho-em-uma-mesa-de-madeira-cercada-por-bussola-de-coisas-do-mar-e-uma-garrafa-velha_176814-886.jpg?w=1060);
+  background-position: center center;
+  text-align: center;
+}
+div.conteiner{
+  background-image: url(https://img.freepik.com/fotos-gratis/fundo-velho-da-textura-do-papel_1232-1932.jpg?t=st=1654711717~exp=1654712317~hmac=ecb043bba5aa51b3c5f1600427b7cbba22c1b7f78b9302bacb47307fb6598cc0&w=900);
+  background-position: center center;
+  background-size: cover;
+  width: 600px;
+  margin-inline: auto;
+  margin-top: 150px;
+  min-height: 400px;
+  border-radius: 15px;
+  box-shadow: 2px 1px 6px rgba(0, 0, 0, 0.638);
+  color: black;
+}
+h1{
+  padding-top: 50px;
+  opacity: .9;
+}
+p{
+  margin-top: 15px;
+  opacity: .8;
+}
+input, button{
+  display: block;
+  margin-inline: auto;
+}
+
+input{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background-color: rgb(242, 196, 155);
+  padding: 15px;
+  border-radius: 15px;
+  border: none;
+  width: 80%;
+}
+
+input::placeholder{
+  color: black;
+  opacity: .7;
+  font-size: 1.3em;
+}
+
+button{
+  border: none;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  background-color: transparent;
+  transform: rotate(0);
+}
+img#btn{
+  width: 100px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.474);
+  border-radius: 50px;
+}
+
+button:hover{
+  cursor: pointer;
+  filter: sepia(0.4);
+}
