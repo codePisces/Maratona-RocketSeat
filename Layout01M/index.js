@@ -4,6 +4,7 @@
 
 const respostaElement = document.querySelector("#resposta")
 const inputPergunta = document.querySelector("#perguntaTxt")
+const botaoPerguntar = document.querySelector("#botaoPerguntar")
 const respostas = [
   "Certeza!",
   "Não tenho tanta certeza.",
@@ -33,6 +34,8 @@ function fazerPergunta() {
     return
   } 
 
+  botaoPerguntar.setAttribute("disabled", true)
+
   const pergunta = "<div>" + inputPergunta.value + "<div/>"
 
   //gerando um numero aleatorio
@@ -40,8 +43,10 @@ function fazerPergunta() {
   const numeroAleatorio = Math.floor(Math.random() * totalRespostas)
   respostaElement.innerHTML = pergunta + respostas[numeroAleatorio]
 
+
   //Sumir a resposta depois de 3sec
   setTimeout(function () {
     respostaElement.style.opacity = 0;
+    botaoPerguntar.removeAttribute("disabled")
   }, 3000)
 }
